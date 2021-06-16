@@ -1,0 +1,11 @@
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --args --disable-web-security --user-data-dir="C:\chrome_temp"
+
+c.. is use to delete directory in cmd.
+only c:\ directory ids open in cmd then only above link is working.
+
+This link is use for the disable web security.
+
+In chorme their is same origin policy because of this policy we can not access the external JSON file.
+
+paste above link in the cmd nd open disable sop chrome window and run server on this chrome window.
+
