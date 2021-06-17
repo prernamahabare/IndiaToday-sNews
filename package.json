@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/prernamahabare/IndiaToday-sNews/issues"
   },
-  "homepage": "https://github.com/prernamahabare/IndiaToday-sNews#readme"
+  "homepage": "https://github.com/prernamahabare/IndiaToday-sNews#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {}
 }
