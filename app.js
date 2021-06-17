@@ -10,10 +10,7 @@ const port = 5000;
 app.use("/static", express.static('static'));
 app.use(express.urlencoded());
 
-<<<<<<< HEAD
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-=======
->>>>>>> 25695d837f240f7d7ee89b57d3d3238359fe26da
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
