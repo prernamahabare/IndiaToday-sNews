@@ -2,7 +2,6 @@ const express = require("express");
 const fs = require("fs");
 const http = require('http');
 const path = require('path');
-const favicon = require('serve-favicon');
 const app = express();
 const bodyparser = require("body-parser");
 const port = process.env.PORT || 5000;
