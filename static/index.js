@@ -2,7 +2,7 @@
 
 //489e688a4a3c4bd4954673bce0efe778
 // let source = 'in';
- const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+ const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 let api = '489e688a4a3c4bd4954673bce0efe778';
 let url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=in&apiKey=489e688a4a3c4bd4954673bce0efe778`;
 const request = new Request(url);
