@@ -4,7 +4,7 @@ const http = require('http');
 const path = require('path');
 const app = express();
 const bodyparser = require("body-parser");
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5500;
 
 app.use("/static", express.static('static'));
 app.use(express.urlencoded());
