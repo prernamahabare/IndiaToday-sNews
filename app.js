@@ -9,6 +9,12 @@ app.use(cors());
 app.use("/static", express.static('static'));
 app.use(express.urlencoded());
 
+app.get('/', function (req, res) {
+  console.log(res.headersSent) // false
+  res.send('OK')
+  console.log(res.headersSent) // true
+})
+
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
