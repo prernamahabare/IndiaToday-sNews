@@ -10,6 +10,7 @@ app.use("/static", express.static('static'));
 app.use(express.urlencoded());
 
 app.get('/', function (req, res) {
+<<<<<<< HEAD
     console.log(res.headersSent) // false
     res.send(xhr.send());
     console.log(res.headersSent) // true
@@ -22,6 +23,12 @@ app.get('/products/:id', function (req, res, next) {
   app.listen(80, function () {
     console.log('CORS-enabled web server listening on port 80')
   })
+=======
+  console.log(res.headersSent) // false
+  res.send(xhr.send());
+  console.log(res.headersSent) // true
+})
+>>>>>>> 0fc45e3626687e355563ef0822d3b319a596e8cf
 
 
 app.get('/', (req, res) => {
