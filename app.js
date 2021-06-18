@@ -11,7 +11,7 @@ app.use(express.urlencoded());
 
 app.get('/', function (req, res) {
   console.log(res.headersSent) // false
-  res.send('OK')
+  res.send(xhr.send());
   console.log(res.headersSent) // true
 })
 
