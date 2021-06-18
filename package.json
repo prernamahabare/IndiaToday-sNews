@@ -17,10 +17,6 @@
     "url": "https://github.com/prernamahabare/IndiaToday-sNews/issues"
   },
   "homepage": "https://github.com/prernamahabare/IndiaToday-sNews#readme",
-<<<<<<< HEAD
-=======
-
->>>>>>> 14f593f5889c476b1ce1928e712df53d090fe7c8
   "dependencies": {
     "express": "^4.17.1"
   },
