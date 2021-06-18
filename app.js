@@ -1,9 +1,8 @@
 const express = require("express");
-const fs = require("fs");
+const app = express();
 const http = require('http');
 const path = require('path');
-const app = express();
-const bodyparser = require("body-parser");
+const server = http.createServer(app);
 const port = process.env.PORT || 5000;
 
 app.use("/static", express.static('static'));
@@ -14,7 +13,8 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
-app.listen(port, ()=> {
+
+server.listen(port, ()=> {
     console.log(`The Application is running successfully on port ${port}`);
 });
 
