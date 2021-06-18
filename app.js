@@ -3,8 +3,9 @@ const app = express();
 const http = require('http');
 const server = http.createServer(app);
 const port = process.env.PORT || 8000;
+var cors = require('cors');
 
-
+app.use(cors());
 app.use("/static", express.static('static'));
 app.use(express.urlencoded());
 
