@@ -1,28 +1,25 @@
 // console.log("hey");
 
 //489e688a4a3c4bd4954673bce0efe778
-// let source = 'in';
- const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+let source = 'in';
+const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 let api = '489e688a4a3c4bd4954673bce0efe778';
-let url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=in&apiKey=489e688a4a3c4bd4954673bce0efe778`;
+let url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=${source}&apiKey=${api}`;
 const request = new Request(url);
 
 
 let newcontainer = document.getElementById('newcontainer');
 
-
-
-
-//const xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 
 // Open the object
-// xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+ //xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
 
 //USE THIS FOR POST REQUEST
-//xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${source}&apiKey=${api}`, true);
-
-const xhr = new XMLHttpRequest();
 xhr.open('GET', url, true);
+
+// const xhr = new XMLHttpRequest();
+// xhr.open('GET', url, true);
 
 xhr.onload = function () {
     if (this.status == 200) {
