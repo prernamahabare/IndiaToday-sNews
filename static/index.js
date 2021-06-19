@@ -9,7 +9,7 @@ const xhr = new XMLHttpRequest();
 
 //USE THIS FOR POST REQUEST
 xhr.open('GET', url, true);
-
+xhr.send(null);
 xhr.onload = function () {
     if (this.status == 200) {
         let json = JSON.parse(this.responseText);
@@ -37,6 +37,6 @@ xhr.onload = function () {
         console.log("Some error occured");
     }
 }
-xhr.send();
+//xhr.send();
 
 
