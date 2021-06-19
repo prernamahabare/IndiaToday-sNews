@@ -10,7 +10,7 @@ app.use("/static", express.static('static'));
 //app.use(express.urlencoded());
 
 app.listen(80, function () {
-    console.log('CORS-enabled web server listening on port 80')
+    console.log('CORS-enabled web server listening on port 80');
 })
 
 app.get('/', function (req, res) {
