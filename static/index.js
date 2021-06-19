@@ -10,10 +10,7 @@ const xhr = new XMLHttpRequest();
 //USE THIS FOR POST REQUEST
 xhr.open('GET', url, true);
 xhr.send(null);
-<<<<<<< HEAD
-=======
 
->>>>>>> 2b264647cee68fb2a3909002ff96ade4678611c1
 xhr.onload = function () {
     if (this.status == 200) {
         let json = JSON.parse(this.responseText);
@@ -41,9 +38,6 @@ xhr.onload = function () {
         console.log("Some error occured");
     }
 }
-<<<<<<< HEAD
-//xhr.send();
-=======
->>>>>>> 2b264647cee68fb2a3909002ff96ade4678611c1
+
 
 
