@@ -1,7 +1,5 @@
 const express = require("express");
 const app = express();
-const http = require('http');
-const server = http.createServer(app);
 const port = process.env.PORT || 80;
 var cors = require('cors');
 
@@ -25,7 +23,7 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`The Application is running successfully on port ${port}`);
 });
 
