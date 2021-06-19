@@ -8,6 +8,7 @@ var cors = require('cors');
 app.use(cors());
 app.use("/static", express.static('static'));
 //app.use(express.urlencoded());
+<<<<<<< HEAD
 
 // app.listen(80, function () {
 //   console.log('CORS-enabled web server listening on port 80')
@@ -17,6 +18,17 @@ app.use("/static", express.static('static'));
 //   console.log(res.headersSent) // false
 //   console.log(res.headersSent) // true
 // })
+=======
+
+app.listen(80, function () {
+    console.log('CORS-enabled web server listening on port 80');
+})
+
+app.get('/', function (req, res) {
+    console.log(res.headersSent) // false
+    console.log(res.headersSent) // true
+})
+>>>>>>> f37f35e24c6244fed90dc6678b45f42ee184448f
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
