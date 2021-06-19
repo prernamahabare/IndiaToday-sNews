@@ -1,5 +1,3 @@
-// console.log("hey");
-
 //489e688a4a3c4bd4954673bce0efe778
 let source = 'in';
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
@@ -9,14 +7,8 @@ let newcontainer = document.getElementById('newcontainer');
 
 const xhr = new XMLHttpRequest();
 
-// Open the object
- //xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
-
 //USE THIS FOR POST REQUEST
 xhr.open('GET', url, true);
-
-// const xhr = new XMLHttpRequest();
-// xhr.open('GET', url, true);
 
 xhr.onload = function () {
     if (this.status == 200) {
@@ -25,11 +17,9 @@ xhr.onload = function () {
         console.log(articles);
         let newsHtml = "";
         articles.forEach(function (element, index) {
-            //console.log(element, index)
-
-                let news =`<p>
+            let news = `<p>
                     <button class="btn btn-primary" type="button"   data-bs-toggle="collapse" data-bs-target="#collapseExample${index}" aria-expanded="false" aria-controls="collapseExample${index}">
-                      <b> Breaking news ${index+1} :</b> ${element["title"]}
+                      <b> Breaking news ${index + 1} :</b> ${element["title"]}
                     </button>
                 </p>
                 <p>
@@ -39,7 +29,7 @@ xhr.onload = function () {
                     </div>
                     </div>
                 </p>`
-         newsHtml += news;
+            newsHtml += news;
         });
         newcontainer.innerHTML = newsHtml;
     }
