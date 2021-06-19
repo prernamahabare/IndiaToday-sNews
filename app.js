@@ -14,6 +14,7 @@ app.use("/static", express.static('static'));
 //   console.log(res.headersSent) // false
 //   console.log(res.headersSent) // true
 // })
+<<<<<<< HEAD
 
 // app.listen(80, function () {
 //     console.log('CORS-enabled web server listening on port 80');
@@ -23,7 +24,13 @@ app.use("/static", express.static('static'));
 //     console.log(res.headersSent) // false
 //     console.log(res.headersSent) // true
 // })
+=======
+>>>>>>> 2b264647cee68fb2a3909002ff96ade4678611c1
 
+// app.get('/', function (req, res) {
+//     console.log(res.headersSent) // false
+//     console.log(res.headersSent) // true
+// })
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
